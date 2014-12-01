@@ -20,10 +20,7 @@ public class ExpressionEvaluator{
 				catch( NumberFormatException e ) {
 
 					int k = stack.pop();
-					System.out.println(k);
-					//failure when popping >1 time
 					int j = stack.pop();
-					System.out.println(j);
 					switch( args[ i ] ){
 						case "-": stack.push( j - k );
 							break;
@@ -38,7 +35,7 @@ public class ExpressionEvaluator{
 				}
 			}
 		}
-		System.out.println( "Result: " + stack.pop() );
+		System.out.println( stack.pop() );
 
 		
 	}
