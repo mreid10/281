@@ -3,11 +3,11 @@ public class Node{
 	public Node next;
 
 	public Node(){
-		this.next = null;
+		this.next = this;
 	}
 	public Node( int i ){
 		this.value = i;
-		this.next = null;
+		this.next = this;
 	}
 	public int get() {
 		return this.value;
